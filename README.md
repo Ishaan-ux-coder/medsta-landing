@@ -1,68 +1,36 @@
- # Medsta — Landing Site
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
- Medsta is a small Next.js landing site that showcases local healthcare services, WhatsApp-based ordering, and a provider-facing admin area scaffold. This repository focuses on UI, routing, and quick integrations — it is a starting point for a production app.
+## Getting Started
 
- ## Tech Stack
+First, run the development server:
 
- - Next.js (App Router)
- - React + TypeScript
- - Tailwind CSS
- - lucide-react for icons
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
- ## Quick Start
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
- 1. Install dependencies
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
- ```bash
- npm install
- ```
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
- 2. Run development server
+## Learn More
 
- ```bash
- npm run dev
- ```
+To learn more about Next.js, take a look at the following resources:
 
- 3. Build for production
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
- ```bash
- npm run build
- npm start
- ```
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
- Default dev server: http://localhost:3000
+## Deploy on Vercel
 
- ## Useful Scripts
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
- - `npm run dev` — Start dev server
- - `npm run build` — Create production build
- - `npm start` — Run production build
- - `npm run lint` — Run linter (if configured)
-
- ## Project Layout (high level)
-
- - `src/app/` — App Router routes and layouts
-   - `src/app/page.tsx` — Landing page (hero, services, features)
-   - `src/app/about/page.tsx` — About page
-   - `src/app/policies/page.tsx` — Single-page legal policies with anchors
-   - `src/app/mlogo.png` — Brand logo used across the site
- - `src/components/ui/` — Reusable UI primitives (button, card, input, etc.)
- - `src/components/dashboard/` — (optional) dashboard UI pieces
- - `src/lib/` — small helpers and provider-context
-
- ## Notes
-
- - The landing page includes WhatsApp order links for a lightweight ordering flow.
- - `src/app/policies/page.tsx` provides anchored sections for Terms, Privacy, Payments, Delivery, Returns, and Contact.
- - Several provider/dashboard files have been cleaned or stubbed — search `src/app/provider` and `src/components/dashboard` to review or remove unused stubs.
-
- ## Contributing
-
- Feel free to open issues or PRs. Keep changes focused and follow existing code style.
-
- ## Contact
-
- For questions or quick feedback, use the project issue tracker or contact the maintainer listed in the repo.
-
- ---
- _This README was updated to reflect current project structure and quick setup steps._
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
