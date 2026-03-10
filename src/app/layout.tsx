@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   title: "Medsta | Top Online Healthcare Services in Lucknow",
   description: "Your trusted healthcare marketplace in Lucknow. Book doctor consultations, lab test at home, MRI scans, and get fastest medicine delivery in Gomti Nagar & beyond.",
   keywords: [
+    "medsta", "medsta.in", "medsta india", "medsta health", "medsta healthcare", "medsta app", "medsta platform", "the medsta app",
+    "online healthcare marketplace", "healthcare marketplace india", "digital healthcare platform", "integrated healthcare ecosystem",
     "Medsta healthcare services", "Medsta healthcare marketplace", "online healthcare marketplace", "healthcare services in Lucknow",
     "online pharmacy Lucknow", "lab test booking Lucknow", "diagnostic centers Lucknow", "home sample collection Lucknow",
     "medicines delivery Lucknow", "online doctor consultation Lucknow", "healthcare services Gomti Nagar", "pharmacy near Gomti Nagar Lucknow",
@@ -45,25 +47,34 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // JSON-LD structured data for Organization
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "MedicalOrganization",
-    name: "Medsta",
-    url: "https://medsta.in",
-    logo: "https://medsta.in/logo.png",
-    description: "Healthcare services at home in Lucknow. Doctor se online salah, blood test ghar par, medicine delivery, and radiology scan from trusted local providers in Gomti Nagar, Eldeco Elegance and across Lucknow.",
-    address: {
-      "@type": "PostalAddress",
-      "addressLocality": "Lucknow",
-      "addressRegion": "Uttar Pradesh",
-      "addressCountry": "IN"
+  // JSON-LD structured data for Organization and WebSite
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Medsta",
+      "url": "https://medsta.in",
+      "alternateName": ["Medsta Health", "The Medsta App"],
     },
-    sameAs: [
-      "https://twitter.com/medsta",
-      "https://linkedin.com/company/medsta"
-    ],
-  };
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalOrganization",
+      "name": "Medsta",
+      "url": "https://medsta.in",
+      "logo": "https://medsta.in/logo.svg",
+      "description": "Healthcare services at home in Lucknow. Doctor se online salah, blood test ghar par, medicine delivery, and radiology scan from trusted local providers in Gomti Nagar, Eldeco Elegance and across Lucknow.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lucknow",
+        "addressRegion": "Uttar Pradesh",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://twitter.com/medsta",
+        "https://linkedin.com/company/medsta"
+      ]
+    }
+  ];
 
   return (
     <html lang="en" className="scroll-smooth">
