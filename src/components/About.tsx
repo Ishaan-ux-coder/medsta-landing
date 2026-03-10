@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section id="about" className="py-32 bg-white relative overflow-hidden">
+    <section id="about" className="py-16 md:py-32 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
           
           {/* Left: Text Content */}
           <motion.div
@@ -18,12 +18,12 @@ export default function About() {
             <h2 className="text-sm font-semibold text-healthcare-blue-600 uppercase tracking-widest mb-4">
               About Medsta
             </h2>
-            <h3 className="text-4xl md:text-5xl font-outfit font-bold text-foreground leading-tight mb-8">
+            <h3 className="text-3xl md:text-5xl font-outfit font-bold text-foreground leading-tight mb-6 md:mb-8">
               A deeply integrated <br className="hidden md:block" />
               <span className="text-slate-400">digital healthcare</span> environment.
             </h3>
             
-            <div className="space-y-6 text-lg text-muted-foreground text-balance">
+            <div className="space-y-4 md:space-y-6 text-base md:text-lg text-muted-foreground text-balance">
               <p>
                 Healthcare has always been fragmented. Patients struggle to communicate with doctors, pharmacies lose context, and diagnostics are delayed by siloed systems.
               </p>
@@ -39,7 +39,7 @@ export default function About() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="relative h-[500px] w-full bg-slate-50 flex items-center justify-center rounded-3xl border border-slate-100 p-8 overflow-hidden group"
+            className="relative h-[320px] md:h-[500px] w-full bg-slate-50 flex items-center justify-center rounded-2xl md:rounded-3xl border border-slate-100 p-6 md:p-8 overflow-hidden group"
           >
             {/* Ambient gradients */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-healthcare-blue-200 rounded-full blur-[80px] group-hover:scale-110 transition-transform duration-700" />

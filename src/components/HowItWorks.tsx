@@ -5,37 +5,37 @@ import { Search, Link as LinkIcon, CheckCircle2 } from "lucide-react";
 
 const steps = [
   {
-    title: "Find Your Provider (Doctor, Lab, Pharmacy)",
-    description: "Search for 'best pathology lab near me', 'online dawa order', or 'Lucknow pharmacy' with our advanced local filtering.",
+    title: "Find Your Provider",
+    description: "Search for doctors, diagnostic centers, or pharmacies locally with advanced filtering.",
     icon: Search,
   },
   {
-    title: "Connect & Consult (Online Doctor Se Baat)",
-    description: "Wondering 'doctor appointment kaise book kare'? Securely share records and get instant 'doctor se online salah' (consultation) right from home.",
+    title: "Connect & Consult",
+    description: "Securely share your digital health records and get instant consultations right from home.",
     icon: LinkIcon,
   },
   {
-    title: "Instant Resolution (Ghar Baithe Healthcare)",
-    description: "Get 'medicine delivery near me' or schedule 'blood test ghar par'. Prescriptions delivered and tests booked automatically.",
+    title: "Instant Resolution",
+    description: "Get prescriptions delivered, tests booked, and continuous care managed automatically.",
     icon: CheckCircle2,
   },
 ];
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-24 bg-white">
+    <section id="how-it-works" className="py-16 md:py-24 bg-white">
       <div className="container px-4 md:px-6 mx-auto max-w-6xl">
-        <div className="flex flex-col md:flex-row gap-16 items-center">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-center">
           
           <div className="w-full md:w-1/2">
             <h2 className="text-sm font-semibold text-healthcare-blue-600 uppercase tracking-widest mb-4">
               How It Works
             </h2>
-            <h3 className="text-3xl md:text-5xl font-outfit font-bold text-foreground mb-8">
+            <h3 className="text-3xl md:text-5xl font-outfit font-bold text-foreground mb-6 md:mb-8">
               Seamless connection from start to finish.
             </h3>
             
-            <div className="space-y-12 mt-12">
+            <div className="space-y-8 md:space-y-12 mt-8 md:mt-12">
               {steps.map((step, index) => {
                 const Icon = step.icon;
                 return (
@@ -56,8 +56,8 @@ export default function HowItWorks() {
                       <Icon className="w-5 h-5 text-healthcare-blue-600" />
                     </div>
                     <div>
-                      <h4 className="text-xl font-bold text-foreground mb-2">{step.title}</h4>
-                      <p className="text-muted-foreground leading-relaxed">{step.description}</p>
+                      <h4 className="text-lg md:text-xl font-bold text-foreground mb-1 md:mb-2">{step.title}</h4>
+                      <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{step.description}</p>
                     </div>
                   </motion.div>
                 );
@@ -71,12 +71,12 @@ export default function HowItWorks() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="bg-healthcare-blue-50 rounded-[2rem] p-8 md:p-12 border border-healthcare-blue-100 relative overflow-hidden"
+              className="bg-healthcare-blue-50 rounded-2xl md:rounded-[2rem] p-5 md:p-12 border border-healthcare-blue-100 relative overflow-hidden"
             >
               <div className="absolute inset-0 bg-glass-gradient pointer-events-none" />
               
               {/* Abstract Mobile Phone Mockup */}
-              <div className="relative mx-auto w-full max-w-[300px] h-[600px] bg-white rounded-[3rem] border-[8px] border-slate-900 shadow-2xl overflow-hidden p-4 flex flex-col gap-4">
+              <div className="relative mx-auto w-full max-w-[260px] md:max-w-[300px] h-[480px] md:h-[600px] bg-white rounded-[2.5rem] md:rounded-[3rem] border-[6px] md:border-[8px] border-slate-900 shadow-2xl overflow-hidden p-3 md:p-4 flex flex-col gap-3 md:gap-4">
                 <div className="w-32 h-6 bg-slate-900 absolute top-0 left-1/2 -translate-x-1/2 rounded-b-xl" />
                 
                 {/* Interface mockup */}

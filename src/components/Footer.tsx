@@ -5,10 +5,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-50 pt-20 pb-10 border-t border-slate-200">
+    <footer className="bg-slate-50 pt-12 md:pt-20 pb-8 md:pb-10 border-t border-slate-200">
       <div className="container px-4 mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-          <div className="md:col-span-1">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-10 md:mb-16">
+          <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-6 group">
               <div className="flex items-center justify-center">
                 <img src="/logo.svg" alt="MEDSTA" className="w-10 h-10 block object-contain" />
@@ -37,8 +37,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-foreground mb-6">Ecosystem</h3>
-            <ul className="space-y-4">
+            <h3 className="font-semibold text-foreground mb-4 md:mb-6">Ecosystem</h3>
+            <ul className="space-y-3 md:space-y-4">
               <li><Link href="#" className="text-sm text-muted-foreground hover:text-healthcare-blue-600 transition-colors">For Patients</Link></li>
               <li><Link href="#" className="text-sm text-muted-foreground hover:text-healthcare-blue-600 transition-colors">For Doctors</Link></li>
               <li><Link href="#" className="text-sm text-muted-foreground hover:text-healthcare-blue-600 transition-colors">Pharmacies</Link></li>
@@ -47,8 +47,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-foreground mb-6">Company</h3>
-            <ul className="space-y-4">
+            <h3 className="font-semibold text-foreground mb-4 md:mb-6">Company</h3>
+            <ul className="space-y-3 md:space-y-4">
               <li><Link href="#" className="text-sm text-muted-foreground hover:text-healthcare-blue-600 transition-colors">About Us</Link></li>
               <li><Link href="#" className="text-sm text-muted-foreground hover:text-healthcare-blue-600 transition-colors">Vision</Link></li>
               <li><Link href="#" className="text-sm text-muted-foreground hover:text-healthcare-blue-600 transition-colors">Careers</Link></li>
@@ -57,8 +57,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-foreground mb-6">Legal</h3>
-            <ul className="space-y-4">
+            <h3 className="font-semibold text-foreground mb-4 md:mb-6">Legal</h3>
+            <ul className="space-y-3 md:space-y-4">
               <li><Link href="#" className="text-sm text-muted-foreground hover:text-healthcare-blue-600 transition-colors">Privacy Policy</Link></li>
               <li><Link href="#" className="text-sm text-muted-foreground hover:text-healthcare-blue-600 transition-colors">Terms of Service</Link></li>
               <li><Link href="#" className="text-sm text-muted-foreground hover:text-healthcare-blue-600 transition-colors">Cookie Policy</Link></li>

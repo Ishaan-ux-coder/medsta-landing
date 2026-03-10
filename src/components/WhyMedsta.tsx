@@ -28,9 +28,9 @@ const features = [
 
 export default function WhyMedsta() {
   return (
-    <section id="why-medsta" className="py-24 bg-slate-50 relative">
+    <section id="why-medsta" className="py-16 md:py-24 bg-slate-50 relative">
       <div className="container px-4 md:px-6 mx-auto">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-10 md:mb-16">
           <h2 className="text-sm font-semibold text-healthcare-blue-600 uppercase tracking-widest mb-4">
             Why Choose Us
           </h2>
@@ -39,7 +39,7 @@ export default function WhyMedsta() {
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 max-w-6xl mx-auto">
           {features.map((feature, i) => {
             const Icon = feature.icon;
             return (
@@ -49,15 +49,15 @@ export default function WhyMedsta() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="bg-white rounded-[2rem] p-8 shadow-sm border border-slate-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+                className="bg-white rounded-2xl md:rounded-[2rem] p-5 md:p-8 shadow-sm border border-slate-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="w-14 h-14 rounded-2xl bg-healthcare-blue-50 text-healthcare-blue-600 flex items-center justify-center mb-6">
-                  <Icon className="w-7 h-7" />
+                <div className="w-11 h-11 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-healthcare-blue-50 text-healthcare-blue-600 flex items-center justify-center mb-4 md:mb-6">
+                  <Icon className="w-5 h-5 md:w-7 md:h-7" />
                 </div>
-                <h4 className="text-xl font-bold text-foreground mb-3 font-outfit">
+                <h4 className="text-base md:text-xl font-bold text-foreground mb-2 md:mb-3 font-outfit">
                   {feature.title}
                 </h4>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                   {feature.description}
                 </p>
               </motion.div>

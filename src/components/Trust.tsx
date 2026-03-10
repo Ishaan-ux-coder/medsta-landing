@@ -10,20 +10,20 @@ const metrics = [
 
 export default function Trust() {
   return (
-    <section className="py-20 border-y border-slate-100 bg-white">
+    <section className="py-12 md:py-20 border-y border-slate-100 bg-white">
       <div className="container px-4 md:px-6 mx-auto">
-        <div className="flex flex-col md:flex-row gap-12 items-center justify-between">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center justify-between">
 
           <div className="w-full md:w-1/3">
-            <h3 className="text-2xl font-outfit font-bold text-foreground mb-4">
+            <h3 className="text-xl md:text-2xl font-outfit font-bold text-foreground mb-3 md:mb-4 text-center md:text-left">
               Trusted by leading healthcare institutions worldwide.
             </h3>
-            <p className="text-muted-foreground">
+            <p className="text-sm md:text-base text-muted-foreground text-center md:text-left">
               Our infrastructure powers thousands of clinics, pharmacies, and hospitals.
             </p>
           </div>
 
-          <div className="w-full md:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="w-full md:w-2/3 grid grid-cols-3 gap-4 md:gap-8">
             {metrics.map((metric, index) => (
               <motion.div
                 key={index}
@@ -33,7 +33,7 @@ export default function Trust() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center md:text-left"
               >
-                <div className="text-4xl md:text-5xl font-black text-healthcare-blue-600 mb-2 tracking-tight">
+                <div className="text-3xl md:text-5xl font-black text-healthcare-blue-600 mb-1 md:mb-2 tracking-tight">
                   {metric.value}
                 </div>
                 <div className="text-sm font-medium text-slate-500 uppercase tracking-wider">

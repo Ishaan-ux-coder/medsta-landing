@@ -30,9 +30,9 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-24 bg-white relative">
+    <section className="py-16 md:py-24 bg-white relative">
       <div className="container px-4 md:px-6 mx-auto">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-10 md:mb-16">
           <h2 className="text-sm font-semibold text-healthcare-blue-600 uppercase tracking-widest mb-4">
             Testimonials
           </h2>
@@ -49,15 +49,15 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-slate-50 rounded-[2rem] p-8 border border-slate-100 shadow-sm"
+              className="bg-slate-50 rounded-2xl md:rounded-[2rem] p-6 md:p-8 border border-slate-100 shadow-sm"
             >
-              <div className="flex items-center gap-1 mb-6">
+              <div className="flex items-center gap-1 mb-4 md:mb-6">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
                 ))}
               </div>
               
-              <p className="text-lg text-foreground italic mb-8 leading-relaxed">
+              <p className="text-base md:text-lg text-foreground italic mb-6 md:mb-8 leading-relaxed">
                 "{testimonial.review}"
               </p>
               

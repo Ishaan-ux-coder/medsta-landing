@@ -24,7 +24,7 @@ const staggerContainer: any = {
 
 export default function Hero() {
    return (
-      <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden bg-hero-gradient">
+      <section className="relative min-h-[85vh] md:min-h-screen flex items-center justify-center pt-24 md:pt-32 pb-12 md:pb-20 overflow-hidden bg-hero-gradient">
          {/* Background Decorative Elements */}
          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[500px] bg-healthcare-blue-200/40 blur-[120px] rounded-full mix-blend-multiply pointer-events-none" />
          <div className="absolute bottom-0 right-[-10%] w-[600px] h-[600px] bg-healthcare-cyan-200/30 blur-[150px] rounded-full mix-blend-multiply pointer-events-none" />
@@ -39,7 +39,7 @@ export default function Hero() {
                {/* Headline */}
                <motion.h1
                   variants={fadeIn}
-                  className="text-5xl md:text-7xl lg:text-6xl font-bold tracking-tighter text-foreground mb-8 font-outfit"
+                  className="text-4xl md:text-7xl lg:text-6xl font-bold tracking-tighter text-foreground mb-6 md:mb-8 font-outfit"
                   style={{ lineHeight: 1.1 }}
                >
                   Delivering Health<br />
@@ -49,7 +49,7 @@ export default function Hero() {
                {/* Subheadline */}
                <motion.p
                   variants={fadeIn}
-                  className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed"
+                  className="text-base md:text-xl lg:text-2xl text-muted-foreground mb-8 md:mb-12 max-w-2xl mx-auto leading-relaxed"
                >
                   Doctor consultation, lab tests, medicines and physiotherapy from trusted local providers. All arranged for you by Medsta.
                </motion.p>
@@ -57,20 +57,20 @@ export default function Hero() {
                {/* CTAs */}
                <motion.div
                   variants={fadeIn}
-                  className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20"
+                  className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-10 md:mb-20"
                >
                   <a
                      href="https://wa.me/918354070437"
                      target="_blank"
                      rel="noopener noreferrer"
-                     className="w-full sm:w-auto px-8 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full font-bold text-lg inline-flex items-center justify-center gap-3 shadow-soft hover:shadow-glass hover:-translate-y-1 transition-all duration-300"
+                     className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full font-bold text-base sm:text-lg inline-flex items-center justify-center gap-3 shadow-soft hover:shadow-glass hover:-translate-y-1 transition-all duration-300"
                   >
                      <MessageCircle className="w-6 h-6" fill="currentColor" />
                      Get started
                   </a>
                   <a
                      href="tel:+918354070437"
-                     className="w-full sm:w-auto px-8 py-4 bg-white hover:bg-slate-50 text-healthcare-blue-700 border border-slate-200 rounded-full font-bold text-lg inline-flex items-center justify-center gap-3 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+                     className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-white hover:bg-slate-50 text-healthcare-blue-700 border border-slate-200 rounded-full font-bold text-base sm:text-lg inline-flex items-center justify-center gap-3 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
                   >
                      <Phone className="w-6 h-6" />
                      Call Now
@@ -80,24 +80,24 @@ export default function Hero() {
                {/* Trust Strip */}
                <motion.div
                   variants={fadeIn}
-                  className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-x-8 gap-y-4 pt-10 border-t border-white/50"
+                  className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-x-6 sm:gap-x-8 gap-y-3 sm:gap-y-4 pt-6 md:pt-10 border-t border-white/50"
                >
-                  <div className="flex items-center gap-2 text-slate-700 font-medium">
+                  <div className="flex items-center gap-2 text-slate-700 font-medium text-sm">
                      <CheckCircle2 className="w-5 h-5 text-healthcare-blue-500" />
                      Trusted Local Providers
                   </div>
                   <div className="hidden sm:block text-slate-300">|</div>
-                  <div className="flex items-center gap-2 text-slate-700 font-medium">
+                  <div className="flex items-center gap-2 text-slate-700 font-medium text-sm">
                      <CheckCircle2 className="w-5 h-5 text-healthcare-blue-500" />
                      Fast Home Service
                   </div>
                   <div className="hidden sm:block text-slate-300">|</div>
-                  <div className="flex items-center gap-2 text-slate-700 font-medium">
+                  <div className="flex items-center gap-2 text-slate-700 font-medium text-sm">
                      <CheckCircle2 className="w-5 h-5 text-healthcare-cyan-500" />
                      Verified Labs & Pharmacies
                   </div>
                   <div className="hidden sm:block text-slate-300">|</div>
-                  <div className="flex items-center gap-2 text-slate-700 font-medium">
+                  <div className="flex items-center gap-2 text-slate-700 font-medium text-sm">
                      <CheckCircle2 className="w-5 h-5 text-healthcare-cyan-500" />
                      Easy Booking
                   </div>
