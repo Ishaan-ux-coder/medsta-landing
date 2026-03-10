@@ -42,8 +42,8 @@ export default function Hero() {
                   className="text-5xl md:text-7xl lg:text-6xl font-bold tracking-tighter text-foreground mb-8 font-outfit"
                   style={{ lineHeight: 1.1 }}
                >
-                  Delivering Health<br />
-                  <span className="text-gradient">at One Message</span>
+                  Top Healthcare Services<br />
+                  <span className="text-gradient">in Lucknow</span>
                </motion.h1>
 
                {/* Subheadline */}
@@ -51,7 +51,7 @@ export default function Hero() {
                   variants={fadeIn}
                   className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed"
                >
-                  Doctor consultation, lab tests, medicines and physiotherapy from trusted local providers. All arranged for you by Medsta.
+                  Book online doctor consultations ("doctor se online salah"), schedule "blood test ghar par," and get the fastest "ghar par medicine delivery" from trusted local Lucknow providers. Your complete healthcare marketplace.
                </motion.p>
 
                {/* CTAs */}

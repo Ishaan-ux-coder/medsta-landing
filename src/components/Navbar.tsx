@@ -36,7 +36,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-4 group">
           <div className="flex items-center justify-center">
-            <img src="/M.svg" alt="MEDSTA" className="w-10 h-10 block" />
+            <img src="/logo.svg" alt="MEDSTA" className="w-10 h-10 block object-contain" />
           </div>
           <span className="text-2xl font-bold tracking-tight text-foreground group-hover:text-healthcare-blue-600 transition-colors">
             MEDSTA

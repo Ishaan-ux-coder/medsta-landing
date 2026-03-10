@@ -5,18 +5,18 @@ import { Search, Link as LinkIcon, CheckCircle2 } from "lucide-react";
 
 const steps = [
   {
-    title: "Find Your Provider",
-    description: "Search for doctors, diagnostic centers, or pharmacies locally with advanced filtering.",
+    title: "Find Your Provider (Doctor, Lab, Pharmacy)",
+    description: "Search for 'best pathology lab near me', 'online dawa order', or 'Lucknow pharmacy' with our advanced local filtering.",
     icon: Search,
   },
   {
-    title: "Connect & Share",
-    description: "Securely share your digital health records and get instant consultations.",
+    title: "Connect & Consult (Online Doctor Se Baat)",
+    description: "Wondering 'doctor appointment kaise book kare'? Securely share records and get instant 'doctor se online salah' (consultation) right from home.",
     icon: LinkIcon,
   },
   {
-    title: "Instant Resolution",
-    description: "Get prescriptions delivered, tests booked, and continuous care managed automatically.",
+    title: "Instant Resolution (Ghar Baithe Healthcare)",
+    description: "Get 'medicine delivery near me' or schedule 'blood test ghar par'. Prescriptions delivered and tests booked automatically.",
     icon: CheckCircle2,
   },
 ];

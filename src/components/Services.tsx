@@ -23,7 +23,7 @@ const services = [
    },
    {
       title: "Pharmacies",
-      description: "Digital prescriptions and real-time inventory connectivity.",
+      description: "Digital prescriptions, 'online dawa order', and fastest 'medicine delivery near me'.",
       icon: Pill,
       color: "bg-teal-100 text-teal-600",
       gradient: "from-teal-50 to-transparent",
@@ -31,7 +31,7 @@ const services = [
    },
    {
       title: "Diagnostics",
-      description: "Seamless test booking and automated reporting to doctors.",
+      description: "Seamless 'lab test booking online', including 'MRI scan Lucknow' and 'blood sample collection home'.",
       icon: Beaker,
       color: "bg-indigo-100 text-indigo-600",
       gradient: "from-indigo-50 to-transparent",
@@ -47,7 +47,7 @@ const services = [
    },
    {
       title: "Delivery",
-      description: "Last-mile healthcare delivery right to the patient's door.",
+      description: "Fast 'ghar par medicine delivery', bringing sasti dawa and reliable healthcare right to the patient's door.",
       icon: Truck,
       color: "bg-slate-100 text-slate-600",
       gradient: "from-slate-50 to-transparent",
