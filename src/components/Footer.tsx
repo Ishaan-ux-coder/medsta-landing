@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-slate-50 pt-12 md:pt-20 pb-8 md:pb-10 border-t border-slate-200">
       <div className="container px-4 mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-10 md:mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 mb-10 md:mb-16">
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-6 group">
               <div className="flex items-center justify-center">
@@ -18,7 +18,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
-              Connecting patients, doctors, pharmacies, diagnostics, and delivery directly in one seamless healthcare ecosystem.
+              Connecting patients, doctors, pharmacies, diagnostics, and delivery directly in one seamless healthcare platform.
             </p>
             <div className="flex gap-4">
               <a href="#" className="p-2 bg-white rounded-full text-slate-400 hover:text-healthcare-blue-600 hover:shadow-md transition-all">
@@ -34,16 +34,6 @@ export default function Footer() {
                 <span className="sr-only">GitHub</span>
               </a>
             </div>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-foreground mb-4 md:mb-6">Ecosystem</h3>
-            <ul className="space-y-3 md:space-y-4">
-              <li><Link href="#" className="text-sm text-muted-foreground hover:text-healthcare-blue-600 transition-colors">For Patients</Link></li>
-              <li><Link href="#" className="text-sm text-muted-foreground hover:text-healthcare-blue-600 transition-colors">For Doctors</Link></li>
-              <li><Link href="#" className="text-sm text-muted-foreground hover:text-healthcare-blue-600 transition-colors">Pharmacies</Link></li>
-              <li><Link href="#" className="text-sm text-muted-foreground hover:text-healthcare-blue-600 transition-colors">Diagnostics</Link></li>
-            </ul>
           </div>
 
           <div>

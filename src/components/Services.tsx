@@ -60,9 +60,6 @@ export default function Services() {
       <section id="services" className="py-16 md:py-24 bg-slate-50 relative">
          <div className="container px-4 md:px-6 mx-auto">
             <div className="text-center max-w-2xl mx-auto mb-10 md:mb-16">
-               <h2 className="text-sm font-semibold text-healthcare-blue-600 uppercase tracking-widest mb-4">
-                  Ecosystem
-               </h2>
                <h3 className="text-3xl md:text-5xl font-outfit font-bold text-foreground mb-6">
                   Everything you need. <br />
                   <span className="text-slate-400">All in one place.</span>
@@ -78,7 +75,7 @@ export default function Services() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-50px" }}
-                        transition={{ duration: 0.5, delay: i * 0.1 }}
+                        transition={{ duration: 0.5 }}
                         className={cn(
                            "group relative overflow-hidden rounded-2xl md:rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 p-5 md:p-8 flex flex-col justify-between",
                            service.className
