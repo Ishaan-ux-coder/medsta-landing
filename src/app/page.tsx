@@ -21,12 +21,13 @@ export default function Home() {
       <div className="relative overflow-hidden w-full">
         {/* The Rumi Darwaza background */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0 blur-[3px] scale-[1.02]"
           style={{ backgroundImage: "url('/rumi-darwaza.jpeg')" }}
         />
         {/* Overlay to ensure text readability */}
-        <div className="absolute inset-0 bg-slate-900/30 z-0 mix-blend-multiply pointer-events-none" />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent z-0 pointer-events-none" />
+        <div className="absolute inset-0 bg-[#82c5d1]/20 z-0 mix-blend-screen pointer-events-none" />
+        <div className="absolute inset-0 bg-white/20 z-0 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 via-slate-900/10 to-transparent z-0 pointer-events-none" />
         
         <div className="relative z-10 w-full">
           <Vision />

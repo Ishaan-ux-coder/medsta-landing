@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StickyMobileBar from "@/components/StickyMobileBar";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 export const metadata: Metadata = {
   title: "Medsta | Top Online Healthcare Services in Lucknow",
@@ -85,7 +81,7 @@ export default function RootLayout({
         />
       </head>
       {/* Added pb-16 to body to prevent content hiding behind StickyMobileBar on small screens */}
-      <body className={`${inter.variable} ${outfit.variable} font-sans antialiased min-h-screen flex flex-col pb-16 md:pb-0`}>
+      <body className="font-sans antialiased min-h-screen flex flex-col pb-16 md:pb-0">
         <Navbar />
         <main className="flex-grow">
           {children}

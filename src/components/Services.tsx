@@ -57,7 +57,7 @@ const services = [
 
 export default function Services() {
    return (
-      <section id="services" className="py-16 md:py-24 bg-slate-50 relative">
+      <section id="services" className="py-16 md:py-24 bg-gradient-to-br from-[#dbf4fa] via-[#eaf4ff] to-white relative">
          <div className="container px-4 md:px-6 mx-auto">
             <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center lg:items-start max-w-7xl mx-auto">
                
@@ -89,7 +89,7 @@ export default function Services() {
                </div>
 
                {/* Right Column for Grid of Cards */}
-               <div className="w-full lg:w-7/12 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 auto-rows-auto">
+               <div className="w-full lg:w-7/12 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 auto-rows-fr">
                   {services.map((service, i) => {
                      const Icon = service.icon;
                      return (
@@ -115,7 +115,7 @@ export default function Services() {
                                     <Icon className="w-5 h-5" />
                                  </div>
                               </div>
-                              <p className="text-muted-foreground text-sm leading-relaxed flex-grow">
+                              <p className={cn("text-muted-foreground text-sm leading-relaxed flex-grow", service.title === "Delivery" && "md:max-w-[60%]")}>
                                  {service.description}
                               </p>
                            </div>

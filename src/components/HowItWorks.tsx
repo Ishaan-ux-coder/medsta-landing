@@ -23,7 +23,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-16 md:py-24 bg-white">
+    <section id="how-it-works" className="py-16 md:py-24 bg-gradient-to-b from-white to-[#f8faff]">
       <div className="container px-4 md:px-6 mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-center">
           
@@ -71,12 +71,13 @@ export default function HowItWorks() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="bg-healthcare-blue-50 rounded-2xl md:rounded-[2rem] p-5 md:p-12 border border-healthcare-blue-100 relative overflow-hidden"
+              className="relative w-full flex justify-center py-10 md:py-0"
             >
-              <div className="absolute inset-0 bg-glass-gradient pointer-events-none" />
+              {/* Glowing background from Figma */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[739px] h-[599px] rounded-full bg-[#bfdbfe]/40 mix-blend-multiply blur-[120px] rotate-90 pointer-events-none" />
               
               {/* Abstract Mobile Phone Mockup */}
-              <div className="relative mx-auto w-full max-w-[260px] md:max-w-[300px] h-[480px] md:h-[600px] bg-white rounded-[2.5rem] md:rounded-[3rem] border-[6px] md:border-[8px] border-slate-900 shadow-2xl overflow-hidden p-3 md:p-4 flex flex-col gap-3 md:gap-4">
+              <div className="relative z-10 mx-auto w-full max-w-[260px] md:max-w-[300px] h-[480px] md:h-[600px] bg-white rounded-[2.5rem] md:rounded-[3rem] border-[6px] md:border-[8px] border-slate-900 shadow-[0_20px_50px_rgba(0,0,0,0.1)] overflow-hidden p-3 md:p-4 flex flex-col gap-3 md:gap-4">
                 <div className="w-32 h-6 bg-slate-900 absolute top-0 left-1/2 -translate-x-1/2 rounded-b-xl" />
                 
                 {/* Interface mockup */}
