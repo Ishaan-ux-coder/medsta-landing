@@ -59,52 +59,75 @@ export default function Services() {
    return (
       <section id="services" className="py-16 md:py-24 bg-slate-50 relative">
          <div className="container px-4 md:px-6 mx-auto">
-            <div className="text-center max-w-2xl mx-auto mb-10 md:mb-16">
-               <h2 className="text-sm font-semibold text-healthcare-blue-600 uppercase tracking-widest mb-4">
-                  Ecosystem
-               </h2>
-               <h3 className="text-3xl md:text-5xl font-outfit font-bold text-foreground mb-6">
-                  Everything you need. <br />
-                  <span className="text-slate-400">All in one place.</span>
-               </h3>
-            </div>
+            <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center lg:items-start max-w-7xl mx-auto">
+               
+               {/* Left Column for Text and Image */}
+               <div className="w-full lg:w-5/12 text-center lg:text-left lg:sticky lg:top-32">
+                  <h2 className="text-sm font-semibold text-healthcare-blue-600 uppercase tracking-widest mb-4">
+                     Ecosystem
+                  </h2>
+                  <h3 className="text-3xl md:text-5xl font-outfit font-bold text-foreground mb-6">
+                     Everything you need. <br />
+                     <span className="text-slate-400">All in one place.</span>
+                  </h3>
+                  <p className="text-slate-500 mb-10 leading-relaxed text-balance text-lg">
+                     From doctor appointments and diagnostics tests to pharmacies, therapy, and medicine delivery— our platform brings every essential healthcare service together, making quality care easy, fast, and accessible.
+                  </p>
+                  
+                  <motion.div
+                     initial={{ opacity: 0, scale: 0.95 }}
+                     whileInView={{ opacity: 1, scale: 1 }}
+                     viewport={{ once: true }}
+                     className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-slate-100/50 bg-slate-100"
+                  >
+                     <img 
+                        src="/Screenshot 2026-03-18 194529.png" 
+                        alt="Medsta Ecosystem" 
+                        className="w-full h-full object-cover mix-blend-multiply" 
+                     />
+                  </motion.div>
+               </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-6 auto-rows-auto md:auto-rows-[250px] max-w-6xl mx-auto">
-               {services.map((service, i) => {
-                  const Icon = service.icon;
-                  return (
-                     <motion.div
-                        key={i}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: "-50px" }}
-                        transition={{ duration: 0.5, delay: i * 0.1 }}
-                        className={cn(
-                           "group relative overflow-hidden rounded-2xl md:rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 p-5 md:p-8 flex flex-col justify-between",
-                           service.className
-                        )}
-                     >
-                        <div className={cn("absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br", service.gradient)} />
+               {/* Right Column for Grid of Cards */}
+               <div className="w-full lg:w-7/12 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 auto-rows-auto">
+                  {services.map((service, i) => {
+                     const Icon = service.icon;
+                     return (
+                        <motion.div
+                           key={i}
+                           initial={{ opacity: 0, y: 20 }}
+                           whileInView={{ opacity: 1, y: 0 }}
+                           viewport={{ once: true, margin: "-50px" }}
+                           transition={{ duration: 0.5, delay: i * 0.1 }}
+                           className={cn(
+                              "group relative overflow-hidden rounded-2xl md:rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 p-5 md:p-8 flex flex-col justify-between",
+                              service.className
+                           )}
+                        >
+                           <div className={cn("absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br", service.gradient)} />
 
-                        <div className="relative z-10">
-                           <div className={cn("w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6", service.color)}>
-                              <Icon className="w-6 h-6" />
+                           <div className="relative z-10 flex flex-col h-full">
+                              <div className="flex items-center justify-between mb-4 md:mb-6">
+                                 <h4 className="text-xl md:text-2xl font-bold text-foreground font-outfit">
+                                    {service.title}
+                                 </h4>
+                                 <div className={cn("w-10 h-10 rounded-full flex items-center justify-center", service.color)}>
+                                    <Icon className="w-5 h-5" />
+                                 </div>
+                              </div>
+                              <p className="text-muted-foreground text-sm leading-relaxed flex-grow">
+                                 {service.description}
+                              </p>
                            </div>
-                           <h4 className="text-xl md:text-2xl font-bold text-foreground mb-3 font-outfit">
-                              {service.title}
-                           </h4>
-                           <p className="text-muted-foreground leading-relaxed">
-                              {service.description}
-                           </p>
-                        </div>
 
-                        {/* Decorative fade at bottom for large cards if needed */}
-                        <div className="absolute right-[-20px] bottom-[-20px] opacity-5 group-hover:opacity-10 transition-opacity">
-                           <Icon className="w-40 h-40" />
-                        </div>
-                     </motion.div>
-                  );
-               })}
+                           {/* Decorative fade at bottom for large cards if needed */}
+                           <div className="absolute -right-6 -bottom-6 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity">
+                              <Icon className="w-32 h-32" />
+                           </div>
+                        </motion.div>
+                     );
+                  })}
+               </div>
             </div>
          </div>
       </section>
