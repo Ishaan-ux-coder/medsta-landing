@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: "Your trusted healthcare marketplace in Lucknow. Book doctor consultations, lab test at home, MRI scans, and get fastest medicine delivery in Gomti Nagar & beyond.",
   keywords: [
     "medsta", "medsta.in", "medsta india", "medsta health", "medsta healthcare", "medsta app", "medsta platform", "the medsta app",
-    "online healthcare marketplace", "healthcare marketplace india", "digital healthcare platform",
+    "online healthcare marketplace", "healthcare marketplace india", "digital healthcare platform", "integrated healthcare ecosystem",
     "Medsta healthcare services", "Medsta healthcare marketplace", "online healthcare marketplace", "healthcare services in Lucknow",
     "online pharmacy Lucknow", "lab test booking Lucknow", "diagnostic centers Lucknow", "home sample collection Lucknow",
     "medicines delivery Lucknow", "online doctor consultation Lucknow", "healthcare services Gomti Nagar", "pharmacy near Gomti Nagar Lucknow",
