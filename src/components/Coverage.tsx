@@ -5,12 +5,10 @@ import { MapPin } from "lucide-react";
 
 export default function Coverage() {
   return (
-    <section id="coverage" className="py-12 md:py-20 bg-slate-900 border-b border-slate-800 relative overflow-hidden">
-      {/* Background ambient light */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-healthcare-blue-900/50 rounded-full blur-[120px] pointer-events-none" />
+    <section id="coverage" className="pt-4 pb-16 md:pt-8 md:pb-24 bg-transparent relative overflow-hidden">
       
       <div className="container px-4 md:px-6 mx-auto relative z-10">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 bg-slate-800/50 border border-slate-700/50 p-6 md:p-12 rounded-2xl md:rounded-[2rem] backdrop-blur-xl max-w-5xl mx-auto shadow-2xl">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 bg-slate-900/60 border border-slate-700/50 p-6 md:p-12 rounded-2xl md:rounded-[2rem] backdrop-blur-md max-w-5xl mx-auto shadow-2xl">
           
           <div className="w-full md:w-1/2 text-center md:text-left">
             <h3 className="text-2xl md:text-4xl font-outfit font-bold text-white mb-3 md:mb-4">

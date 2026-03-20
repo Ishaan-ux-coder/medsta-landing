@@ -28,7 +28,7 @@ const features = [
 
 export default function WhyMedsta() {
   return (
-    <section id="why-medsta" className="py-16 md:py-24 bg-slate-50 relative">
+    <section id="why-medsta" className="py-16 md:py-24 bg-gradient-to-b from-[#e6f7ff] via-[#dcf4fa] to-white relative">
       <div className="container px-4 md:px-6 mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-16">
           <h2 className="text-sm font-semibold text-healthcare-blue-600 uppercase tracking-widest mb-4">

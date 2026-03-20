@@ -15,6 +15,10 @@ const config: Config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['"Segoe UI Symbol"', '"Segoe UI"', "sans-serif"],
+        outfit: ['"Segoe UI Symbol"', '"Segoe UI"', "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
