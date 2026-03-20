@@ -24,7 +24,7 @@ export default function CTA() {
                      Ready to simplify healthcare?
                   </h2>
                   <p className="text-lg md:text-xl text-blue-50 mb-10 text-balance">
-                     Join Medsta today. Whether you&apos;re a patient seeking better care or a provider wanting seamless operations.
+                     Join the Medsta ecosystem today. Whether you&apos;re a patient seeking better care or a provider wanting seamless operations.
                   </p>
 
                   <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

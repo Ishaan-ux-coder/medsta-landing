@@ -5,18 +5,18 @@ import { Search, Link as LinkIcon, CheckCircle2 } from "lucide-react";
 
 const steps = [
   {
-    title: "Message us on WhatsApp",
-    description: "Send your requirement and we will guide you instantly.",
+    title: "Find Your Provider",
+    description: "Search for doctors, diagnostic centers, or pharmacies locally with advanced filtering.",
     icon: Search,
   },
   {
-    title: "Choose and compare between multiple available options",
-    description: "Pick the best option for price, quality, and delivery time.",
+    title: "Connect & Consult",
+    description: "Securely share your digital health records and get instant consultations right from home.",
     icon: LinkIcon,
   },
   {
-    title: "Get your order ASAP",
-    description: "Fast, reliable service from trusted local providers.",
+    title: "Instant Resolution",
+    description: "Get prescriptions delivered, tests booked, and continuous care managed automatically.",
     icon: CheckCircle2,
   },
 ];
@@ -35,7 +35,7 @@ export default function HowItWorks() {
               Seamless connection from start to finish.
             </h3>
             
-            <div className="hidden md:block space-y-8 md:space-y-12 mt-8 md:mt-12">
+            <div className="space-y-8 md:space-y-12 mt-8 md:mt-12">
               {steps.map((step, index) => {
                 const Icon = step.icon;
                 return (
@@ -88,52 +88,29 @@ export default function HowItWorks() {
                   </div>
                 </div>
 
-                {/* Steps inside the phone on mobile */}
-                <div className="md:hidden flex-grow mt-6 bg-slate-50 rounded-2xl p-4 space-y-3 overflow-hidden">
-                  {steps.map((step, index) => (
-                    <div
-                      key={index}
-                      className="w-full bg-white rounded-xl shadow-sm border border-slate-100 p-3"
-                    >
-                      <div className="text-xs font-semibold text-healthcare-blue-600 mb-1">
-                        Step {index + 1}
-                      </div>
-                      <div className="text-sm font-semibold text-foreground leading-snug">
-                        {step.title}
-                      </div>
-                      <div className="text-xs text-muted-foreground leading-relaxed mt-1">
-                        {step.description}
-                      </div>
-                    </div>
-                  ))}
+                <div className="grid grid-cols-2 gap-3 mt-6">
+                  <div className="h-24 bg-slate-50 rounded-2xl flex flex-col justify-end p-3">
+                     <div className="w-8 h-8 rounded-full bg-healthcare-blue-100 mb-2" />
+                     <div className="w-16 h-2 bg-slate-200 rounded-full" />
+                  </div>
+                  <div className="h-24 bg-slate-50 rounded-2xl flex flex-col justify-end p-3">
+                     <div className="w-8 h-8 rounded-full bg-healthcare-cyan-100 mb-2" />
+                     <div className="w-16 h-2 bg-slate-200 rounded-full" />
+                  </div>
                 </div>
 
-                {/* Desktop/tablet-only abstract UI */}
-                <div className="hidden md:block">
-                  <div className="grid grid-cols-2 gap-3 mt-6">
-                    <div className="h-24 bg-slate-50 rounded-2xl flex flex-col justify-end p-3">
-                      <div className="w-8 h-8 rounded-full bg-healthcare-blue-100 mb-2" />
-                      <div className="w-16 h-2 bg-slate-200 rounded-full" />
-                    </div>
-                    <div className="h-24 bg-slate-50 rounded-2xl flex flex-col justify-end p-3">
-                      <div className="w-8 h-8 rounded-full bg-healthcare-cyan-100 mb-2" />
-                      <div className="w-16 h-2 bg-slate-200 rounded-full" />
-                    </div>
+                <div className="flex-grow mt-6 bg-slate-50 rounded-2xl p-4 space-y-4">
+                  <div className="w-full h-12 bg-white rounded-xl shadow-sm border border-slate-100 flex items-center px-3 gap-3">
+                     <div className="w-6 h-6 rounded-full bg-green-100" />
+                     <div className="w-20 h-2 bg-slate-200 rounded-full" />
                   </div>
-
-                  <div className="flex-grow mt-6 bg-slate-50 rounded-2xl p-4 space-y-4">
-                    <div className="w-full h-12 bg-white rounded-xl shadow-sm border border-slate-100 flex items-center px-3 gap-3">
-                      <div className="w-6 h-6 rounded-full bg-green-100" />
-                      <div className="w-20 h-2 bg-slate-200 rounded-full" />
-                    </div>
-                    <div className="w-full h-12 bg-white rounded-xl shadow-sm border border-slate-100 flex items-center px-3 gap-3">
-                      <div className="w-6 h-6 rounded-full bg-blue-100" />
-                      <div className="w-24 h-2 bg-slate-200 rounded-full" />
-                    </div>
-                    <div className="w-full h-12 bg-white rounded-xl shadow-sm border border-slate-100 flex items-center px-3 gap-3">
-                      <div className="w-6 h-6 rounded-full bg-orange-100" />
-                      <div className="w-16 h-2 bg-slate-200 rounded-full" />
-                    </div>
+                  <div className="w-full h-12 bg-white rounded-xl shadow-sm border border-slate-100 flex items-center px-3 gap-3">
+                     <div className="w-6 h-6 rounded-full bg-blue-100" />
+                     <div className="w-24 h-2 bg-slate-200 rounded-full" />
+                  </div>
+                  <div className="w-full h-12 bg-white rounded-xl shadow-sm border border-slate-100 flex items-center px-3 gap-3">
+                     <div className="w-6 h-6 rounded-full bg-orange-100" />
+                     <div className="w-16 h-2 bg-slate-200 rounded-full" />
                   </div>
                 </div>
               </div>
