@@ -100,28 +100,28 @@ export default function Services() {
                            viewport={{ once: true, margin: "-50px" }}
                            transition={{ duration: 0.5, delay: i * 0.1 }}
                            className={cn(
-                              "group relative overflow-hidden rounded-2xl md:rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 p-5 md:p-8 flex flex-col justify-between",
+                              "group relative overflow-hidden rounded-[1.5rem] md:rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 p-4 md:p-8 flex flex-row md:flex-col items-center md:items-stretch justify-between",
                               service.className
                            )}
                         >
                            <div className={cn("absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br", service.gradient)} />
 
-                           <div className="relative z-10 flex flex-col h-full">
-                              <div className="flex items-center justify-between mb-4 md:mb-6">
-                                 <h4 className="text-xl md:text-2xl font-bold text-foreground font-outfit">
+                           <div className="relative z-10 flex flex-col w-full h-full">
+                              <div className="flex flex-row md:flex-col items-center justify-between md:items-start mb-0 md:mb-6 w-full gap-4">
+                                 <h4 className="text-[1.35rem] md:text-2xl font-bold text-foreground font-outfit order-1 md:order-none">
                                     {service.title}
                                  </h4>
-                                 <div className={cn("w-10 h-10 rounded-full flex items-center justify-center", service.color)}>
-                                    <Icon className="w-5 h-5" />
+                                 <div className={cn("w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center shrink-0 order-2 md:order-none", service.color)}>
+                                    <Icon className="w-5 h-5 md:w-6 md:h-6" />
                                  </div>
                               </div>
-                              <p className={cn("text-muted-foreground text-sm leading-relaxed flex-grow", service.title === "Delivery" && "md:max-w-[60%]")}>
+                              <p className={cn("hidden md:block text-muted-foreground text-sm leading-relaxed flex-grow", service.title === "Delivery" && "md:max-w-[60%]")}>
                                  {service.description}
                               </p>
                            </div>
 
                            {/* Decorative fade at bottom for large cards if needed */}
-                           <div className="absolute -right-6 -bottom-6 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity">
+                           <div className="hidden md:block absolute -right-6 -bottom-6 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity">
                               <Icon className="w-32 h-32" />
                            </div>
                         </motion.div>

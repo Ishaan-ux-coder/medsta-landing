@@ -19,8 +19,8 @@ export default function About() {
               ABOUT MEDSTA
             </h2>
             <h3 className="text-3xl md:text-5xl font-outfit font-bold text-foreground leading-tight mb-6 md:mb-8">
-              A deeply integrated <br className="hidden md:block" />
-              <span className="text-slate-400">digital healthcare</span> <br className="hidden md:block" />
+              A deeply integrated <br />
+              <span className="text-slate-400 font-light">digital healthcare</span> <br />
               environment.
             </h3>
             

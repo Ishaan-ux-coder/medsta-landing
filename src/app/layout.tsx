@@ -81,9 +81,9 @@ export default function RootLayout({
         />
       </head>
       {/* Added pb-16 to body to prevent content hiding behind StickyMobileBar on small screens */}
-      <body className="font-sans antialiased min-h-screen flex flex-col pb-16 md:pb-0">
+      <body className="font-sans antialiased min-h-screen flex flex-col pb-16 md:pb-0 overflow-x-hidden">
         <Navbar />
-        <main className="flex-grow">
+        <main className="flex-grow overflow-x-hidden">
           {children}
         </main>
         <Footer />
