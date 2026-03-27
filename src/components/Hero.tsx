@@ -57,49 +57,49 @@ export default function Hero() {
                {/* CTAs */}
                <motion.div
                   variants={fadeIn}
-                  className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-10 md:mb-20"
+                  className="flex flex-row items-center justify-center gap-3 sm:gap-4 mb-10 md:mb-20 w-full"
                >
+                  <a
+                     href="tel:+918354070437"
+                     className="flex-1 sm:flex-none px-3 sm:px-8 py-3.5 sm:py-4 bg-white hover:bg-slate-50 text-healthcare-blue-700 border border-slate-200 rounded-full font-bold text-sm sm:text-lg inline-flex items-center justify-center gap-2 sm:gap-3 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+                  >
+                     <Phone className="w-4 h-4 sm:w-6 sm:h-6" />
+                     Call Now
+                  </a>
                   <a
                      href="https://wa.me/918354070437"
                      target="_blank"
                      rel="noopener noreferrer"
-                     className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full font-bold text-base sm:text-lg inline-flex items-center justify-center gap-3 shadow-soft hover:shadow-glass hover:-translate-y-1 transition-all duration-300"
+                     className="flex-1 sm:flex-none px-3 sm:px-8 py-3.5 sm:py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full font-bold text-sm sm:text-lg inline-flex items-center justify-center gap-2 sm:gap-3 shadow-soft hover:shadow-glass hover:-translate-y-1 transition-all duration-300"
                   >
-                     <MessageCircle className="w-6 h-6" fill="currentColor" />
+                     <MessageCircle className="w-4 h-4 sm:w-6 sm:h-6" fill="currentColor" />
                      Get started
-                  </a>
-                  <a
-                     href="tel:+918354070437"
-                     className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-white hover:bg-slate-50 text-healthcare-blue-700 border border-slate-200 rounded-full font-bold text-base sm:text-lg inline-flex items-center justify-center gap-3 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
-                  >
-                     <Phone className="w-6 h-6" />
-                     Call Now
                   </a>
                </motion.div>
 
                {/* Trust Strip */}
                <motion.div
                   variants={fadeIn}
-                  className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-x-6 sm:gap-x-8 gap-y-3 sm:gap-y-4 pt-6 md:pt-10 border-t border-white/50"
+                  className="grid grid-cols-2 sm:flex sm:flex-row sm:flex-wrap items-start sm:items-center justify-center gap-x-2 sm:gap-x-8 gap-y-3 sm:gap-y-4 pt-6 md:pt-10 border-t border-white/50"
                >
-                  <div className="flex items-center gap-2 text-slate-700 font-medium text-sm">
-                     <CheckCircle2 className="w-5 h-5 text-healthcare-blue-500" />
-                     Trusted Local Providers
+                  <div className="flex items-center gap-2 text-slate-700 font-medium text-xs sm:text-sm">
+                     <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-healthcare-blue-500 shrink-0" />
+                     <span className="leading-tight">Trusted Local Providers</span>
                   </div>
                   <div className="hidden sm:block text-slate-300">|</div>
-                  <div className="flex items-center gap-2 text-slate-700 font-medium text-sm">
-                     <CheckCircle2 className="w-5 h-5 text-healthcare-blue-500" />
-                     Fast Home Service
+                  <div className="flex items-center gap-2 text-slate-700 font-medium text-xs sm:text-sm">
+                     <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-healthcare-blue-500 shrink-0" />
+                     <span className="leading-tight">Fast Home Service</span>
                   </div>
                   <div className="hidden sm:block text-slate-300">|</div>
-                  <div className="flex items-center gap-2 text-slate-700 font-medium text-sm">
-                     <CheckCircle2 className="w-5 h-5 text-healthcare-cyan-500" />
-                     Verified Labs & Pharmacies
+                  <div className="flex items-center gap-2 text-slate-700 font-medium text-xs sm:text-sm">
+                     <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-healthcare-cyan-500 shrink-0" />
+                     <span className="leading-tight">Verified Labs & Pharmacies</span>
                   </div>
                   <div className="hidden sm:block text-slate-300">|</div>
-                  <div className="flex items-center gap-2 text-slate-700 font-medium text-sm">
-                     <CheckCircle2 className="w-5 h-5 text-healthcare-cyan-500" />
-                     Easy Booking
+                  <div className="flex items-center gap-2 text-slate-700 font-medium text-xs sm:text-sm">
+                     <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-healthcare-cyan-500 shrink-0" />
+                     <span className="leading-tight">Easy Booking</span>
                   </div>
                </motion.div>
 
